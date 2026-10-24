@@ -130,7 +130,7 @@ details{background:#fff;border-radius:14px;padding:12px 14px;margin:8px 0;font-w
 (function(){var q=new URLSearchParams(location.search),cid=q.get('clickid')||'';
 var p=new URLSearchParams({target:'-7EBNQCgQAAANMmwOTgwAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE',bg_color:'ffffff',text_color:'1d1d1f',btn_color:'e5262e',btn_text_color:'ffffff',btn_shdw:'c41c23',bg_opacity:'1',form_width:'100',name_width:'100',phone_width:'100',btn_font:'20',btn_font_pos:'12px 50px',btn_edit_text:'Quiero mi bálsamo',name_pos:'margin-right',phone_pos:'margin-right',button_pos:'margin-right'});
 if(cid)p.set('clickid',cid);['subacc','subacc2','esub'].forEach(function(k){if(q.get(k))p.set(k,q.get(k))});
-document.getElementById('frm').src='https://idfzxd.pro/forms/?'+p.toString();
+document.getElementById('frm').src='https://idfzxd.pro/forms/?'+p.toString().replace(/\+/g,'%20');
 document.querySelectorAll('a.cta').forEach(function(a){a.addEventListener('click',function(){try{ttq.track('ClickButton',{content_id:'33683',content_type:'product'})}catch(e){}})});
 })();
 </script>
